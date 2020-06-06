@@ -1,0 +1,34 @@
+toolsets = gnu vs2017 vs2015 vs2013;
+
+gnu.makefile = ../GNUmakefile/GNUmakefile;
+vs2017.solutionfile = ../VC15/IshikoTypes.sln;
+vs2015.solutionfile = ../VC14/IshikoTypes.sln;
+vs2013.solutionfile = ../VC12/IshikoTypes.sln;
+
+library IshikoTypes
+{
+    archs = x86 x86_64;
+
+    includedirs += ../../Include/Ishiko/Types;
+
+    if ($(toolset) == gnu)
+    {
+        cxx-compiler-options = "-std=c++11";
+        outputdir = ../../Lib;
+    }
+
+    if ($(toolset) != gnu)
+    {
+        outputdir = ../../Lib/$(arch);
+    }
+
+    if ($(config) == Debug)
+    {
+        basename = IshikoTypes-d;
+    }
+
+    headers
+    {
+        ../../Include/Ishiko/Terminal/linkoptions.h
+    }
+}
