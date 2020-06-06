@@ -29,6 +29,6 @@ library IshikoTypes
 
     headers
     {
-        ../../Include/Ishiko/Terminal/linkoptions.h
+        ../../Include/Ishiko/Types/linkoptions.h
     }
 }
