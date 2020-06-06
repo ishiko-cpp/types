@@ -29,6 +29,12 @@ library IshikoTypes
 
     headers
     {
+        ../../Include/Ishiko/Types/Color.h
         ../../Include/Ishiko/Types/linkoptions.h
+    }
+
+    sources
+    {
+        ../../Source/Color.cpp
     }
 }
