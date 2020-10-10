@@ -7,4 +7,13 @@
 #ifndef _ISHIKO_TYPES_COLOR_H_
 #define _ISHIKO_TYPES_COLOR_H_
 
+namespace Ishiko
+{
+
+class Color
+{
+};
+
+}
+
 #endif
