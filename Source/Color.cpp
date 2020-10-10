@@ -5,3 +5,13 @@
 */
 
 #include "Color.h"
+
+namespace Ishiko
+{
+
+Color::Color(unsigned char red, unsigned char green, unsigned char blue)
+    : red(red), green(green), blue(blue), alpha(0xFF)
+{
+}
+
+}

@@ -17,7 +17,11 @@ ColorTests::ColorTests(const TestNumber& number, const TestEnvironment& environm
 
 void ColorTests::ConstructorTest1(Test& test)
 {
-    Ishiko::Color color;
+    Ishiko::Color color(0, 1, 2);
 
+    ISHTF_FAIL_IF_NEQ(color.red, 0);
+    ISHTF_FAIL_IF_NEQ(color.green, 1);
+    ISHTF_FAIL_IF_NEQ(color.blue, 2);
+    ISHTF_FAIL_IF_NEQ(color.alpha, 0xFF);
     ISHTF_PASS();
 }

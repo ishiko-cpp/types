@@ -12,8 +12,17 @@ namespace Ishiko
 
 class Color
 {
+public:
+    Color(unsigned char red, unsigned char green, unsigned char blue);
+
+    unsigned char red;
+    unsigned char green;
+    unsigned char blue;
+    unsigned char alpha;
 };
 
 }
+
+#include "linkoptions.h"
 
 #endif
