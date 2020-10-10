@@ -12,8 +12,25 @@ namespace Ishiko
 
 class Color
 {
+public:
+    enum EColor
+    {
+        eBlack,
+        eGreen,
+        eRed
+    };
+
+    Color(EColor color);
+    Color(unsigned char red, unsigned char green, unsigned char blue);
+
+    unsigned char red;
+    unsigned char green;
+    unsigned char blue;
+    unsigned char alpha;
 };
 
 }
+
+#include "linkoptions.h"
 
 #endif
