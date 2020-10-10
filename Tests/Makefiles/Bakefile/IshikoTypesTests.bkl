@@ -19,8 +19,14 @@ program IshikoTypesTests : IshikoTypes, IshikoTestFrameworkCore
         libs += IshikoTypes IshikoTestFrameworkCore IshikoProcess IshikoErrors boost_filesystem boost_system;
     }
 
+    headers
+    {
+        ../../Source/ColorTests.h
+    }
+
     sources
     {
         ../../Source/main.cpp
+        ../../Source/ColorTests.cpp
     }
 }
