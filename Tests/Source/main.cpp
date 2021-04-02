@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
     See https://github.com/Ishiko-cpp/Types/blob/master/LICENSE.txt
 */
@@ -11,7 +11,7 @@ using namespace Ishiko::Tests;
 
 int main(int argc, char* argv[])
 {
-    TestHarness theTestHarness("IshikoProcess");
+    TestHarness theTestHarness("IshikoTypes");
 
     TestSequence& theTests = theTestHarness.tests();
     theTests.append<ColorTests>();
