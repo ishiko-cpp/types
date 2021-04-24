@@ -5,6 +5,7 @@
 */
 
 #include "ColorTests.h"
+#include "Point2DTests.h"
 #include "Ishiko/TestFramework/TestFrameworkCore.h"
 
 using namespace Ishiko::Tests;
@@ -15,6 +16,7 @@ int main(int argc, char* argv[])
 
     TestSequence& theTests = theTestHarness.tests();
     theTests.append<ColorTests>();
+    theTests.append<Point2DTests>();
 
     return theTestHarness.run();
 }

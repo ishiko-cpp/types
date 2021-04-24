@@ -153,7 +153,9 @@
     <ClCompile Include="..\..\Source\Color.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Include\Ishiko\Types.h" />
     <ClInclude Include="..\..\Include\Ishiko\Types\Color.h" />
+    <ClInclude Include="..\..\Include\Ishiko\Types\Point2D.h" />
     <ClInclude Include="..\..\Include\Ishiko\Types\linkoptions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

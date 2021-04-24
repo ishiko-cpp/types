@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
     See https://github.com/Ishiko-cpp/Types/blob/master/LICENSE.txt
 */
@@ -10,9 +10,8 @@
 namespace Ishiko
 {
 
-class Color
+struct Color
 {
-public:
     enum EColor
     {
         eBlack,
@@ -20,8 +19,8 @@ public:
         eRed
     };
 
-    Color(EColor color);
-    Color(unsigned char red, unsigned char green, unsigned char blue);
+    Color(EColor color) noexcept;
+    Color(unsigned char red, unsigned char green, unsigned char blue) noexcept;
 
     unsigned char red;
     unsigned char green;
