@@ -19,8 +19,8 @@ struct Color
         eRed
     };
 
-    Color(EColor color);
-    Color(unsigned char red, unsigned char green, unsigned char blue);
+    Color(EColor color) noexcept;
+    Color(unsigned char red, unsigned char green, unsigned char blue) noexcept;
 
     unsigned char red;
     unsigned char green;
