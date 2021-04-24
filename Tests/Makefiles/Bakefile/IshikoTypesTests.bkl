@@ -22,11 +22,13 @@ program IshikoTypesTests : IshikoTypes, IshikoTestFrameworkCore
     headers
     {
         ../../Source/ColorTests.h
+        ../../Source/Point2DTests.h
     }
 
     sources
     {
         ../../Source/main.cpp
         ../../Source/ColorTests.cpp
+        ../../Source/Point2DTests.cpp
     }
 }

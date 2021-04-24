@@ -7,4 +7,24 @@
 #ifndef _ISHIKO_TYPES_POINT2D_H_
 #define _ISHIKO_TYPES_POINT2D_H_
 
+namespace Ishiko
+{
+
+template <class T>
+struct Point2D
+{
+    Point2D(T x, T y);
+
+    T x;
+    T y;
+};
+
+template <class T>
+Point2D<T>::Point2D(T x, T y)
+    : x(x), y(y)
+{
+}
+
+}
+
 #endif
