@@ -9,7 +9,7 @@
 namespace Ishiko
 {
 
-Color::Color(EColor color)
+Color::Color(EColor color) noexcept
 {
     switch(color)
     {
@@ -35,7 +35,7 @@ Color::Color(EColor color)
     alpha = 0xFF;
 }
 
-Color::Color(unsigned char red, unsigned char green, unsigned char blue)
+Color::Color(unsigned char red, unsigned char green, unsigned char blue) noexcept
     : red(red), green(green), blue(blue), alpha(0xFF)
 {
 }

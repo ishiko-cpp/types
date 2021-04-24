@@ -1,11 +1,11 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
     See https://github.com/Ishiko-cpp/Types/blob/master/LICENSE.txt
 */
 
-#ifndef _ISHIKO_TYPES_TEST_COLORTESTS_H_
-#define _ISHIKO_TYPES_TEST_COLORTESTS_H_
+#ifndef _ISHIKO_TYPES_TESTS_COLORTESTS_H_
+#define _ISHIKO_TYPES_TESTS_COLORTESTS_H_
 
 #include "Ishiko/TestFramework/TestFrameworkCore.h"
 
