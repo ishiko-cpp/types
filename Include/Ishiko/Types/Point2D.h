@@ -7,6 +7,8 @@
 #ifndef _ISHIKO_TYPES_POINT2D_H_
 #define _ISHIKO_TYPES_POINT2D_H_
 
+#include <initializer_list>
+
 namespace Ishiko
 {
 
@@ -15,6 +17,7 @@ struct Point2D
 {
     Point2D() noexcept = default;
     Point2D(T x, T y) noexcept;
+    Point2D(std::initializer_list<T> l) noexcept;
 
     bool operator==(const Point2D& other) const noexcept;
     bool operator!=(const Point2D& other) const noexcept;
@@ -27,6 +30,22 @@ template <class T>
 Point2D<T>::Point2D(T x, T y) noexcept
     : x(x), y(y)
 {
+}
+
+template <class T>
+Point2D<T>::Point2D(std::initializer_list<T> l) noexcept
+    : x(0), y(0)
+{
+    auto it = l.begin();
+    if (it != l.end())
+    {
+        x = *it;
+        ++it;
+        if (it != l.end())
+        {
+            y = *it;
+        }
+    }
 }
 
 template <class T>

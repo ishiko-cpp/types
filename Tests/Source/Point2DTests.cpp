@@ -15,6 +15,9 @@ Point2DTests::Point2DTests(const TestNumber& number, const TestEnvironment& envi
 {
     append<HeapAllocationErrorsTest>("Constructor test 1", ConstructorTest1);
     append<HeapAllocationErrorsTest>("Constructor test 2", ConstructorTest2);
+    append<HeapAllocationErrorsTest>("Constructor test 3", ConstructorTest3);
+    append<HeapAllocationErrorsTest>("Constructor test 4", ConstructorTest4);
+    append<HeapAllocationErrorsTest>("Constructor test 5", ConstructorTest5);
     append<HeapAllocationErrorsTest>("operator== test 1", EqualityOperatorTest1);
     append<HeapAllocationErrorsTest>("operator== test 2", EqualityOperatorTest2);
     append<HeapAllocationErrorsTest>("operator!= test 1", InequalityOperatorTest1);
@@ -33,6 +36,33 @@ void Point2DTests::ConstructorTest1(Test& test)
 void Point2DTests::ConstructorTest2(Test& test)
 {
     Point2D<int> point(1, 2);
+
+    ISHTF_FAIL_IF_NEQ(point.x, 1);
+    ISHTF_FAIL_IF_NEQ(point.y, 2);
+    ISHTF_PASS();
+}
+
+void Point2DTests::ConstructorTest3(Test& test)
+{
+    Point2D<int> point({});
+
+    ISHTF_FAIL_IF_NEQ(point.x, 0);
+    ISHTF_FAIL_IF_NEQ(point.y, 0);
+    ISHTF_PASS();
+}
+
+void Point2DTests::ConstructorTest4(Test& test)
+{
+    Point2D<int> point({ 1 });
+
+    ISHTF_FAIL_IF_NEQ(point.x, 1);
+    ISHTF_FAIL_IF_NEQ(point.y, 0);
+    ISHTF_PASS();
+}
+
+void Point2DTests::ConstructorTest5(Test& test)
+{
+    Point2D<int> point({ 1, 2 });
 
     ISHTF_FAIL_IF_NEQ(point.x, 1);
     ISHTF_FAIL_IF_NEQ(point.y, 2);
