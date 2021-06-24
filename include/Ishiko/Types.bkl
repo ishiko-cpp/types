@@ -10,11 +10,11 @@ template IshikoTypes
 
     if ($(toolset) == gnu)
     {
-        libdirs += $(ISHIKO_CPP_TYPES_ROOT)/Lib;
+        libdirs += $(ISHIKO_CPP_TYPES_ROOT)/lib;
     }
 
     if ($(toolset) != gnu)
     {
-        libdirs += $(ISHIKO_CPP_TYPES_ROOT)/Lib/$(arch);
+        libdirs += $(ISHIKO_CPP_TYPES_ROOT)/lib/$(arch);
     }
 }

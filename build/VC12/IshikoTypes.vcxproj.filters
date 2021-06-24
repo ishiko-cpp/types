@@ -31,7 +31,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Color.cpp">
+    <ClCompile Include="..\..\src\Color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
