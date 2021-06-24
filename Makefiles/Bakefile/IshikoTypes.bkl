@@ -9,7 +9,7 @@ library IshikoTypes
 {
     archs = x86 x86_64;
 
-    includedirs += ../../Include/Ishiko/Types;
+    includedirs += ../../include/Ishiko/Types;
 
     if ($(toolset) == gnu)
     {
@@ -29,11 +29,11 @@ library IshikoTypes
 
     headers
     {
-        ../../Include/Ishiko/Types.h
+        ../../include/Ishiko/Types.h
 
-        ../../Include/Ishiko/Types/Color.h
-        ../../Include/Ishiko/Types/Point2D.h
-        ../../Include/Ishiko/Types/linkoptions.h
+        ../../include/Ishiko/Types/Color.h
+        ../../include/Ishiko/Types/Point2D.h
+        ../../include/Ishiko/Types/linkoptions.h
     }
 
     sources

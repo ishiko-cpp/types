@@ -61,7 +61,7 @@ all: ../Bakefile/../../Lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,
 	$(RANLIB) $@
 
 $(_builddir)IshikoTypes_Color.o: ../../Source/Color.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I../../Include/Ishiko/Types -std=c++11 ../../Source/Color.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I../../include/Ishiko/Types -std=c++11 ../../Source/Color.cpp
 
 clean:
 	rm -f $(_builddir)*.o
