@@ -54,9 +54,9 @@ _builddir := $(if $(findstring $(abspath $(builddir)),$(builddir)),,../../)$(bui
 _builddir_error := $(shell mkdir -p $(_builddir) 2>&1)
 $(if $(_builddir_error),$(error Failed to create build directory: $(_builddir_error)))
 endif
-all: ../Bakefile/../../Lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
+all: ../Bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
 
-../Bakefile/../../Lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a: $(_builddir)IshikoTypes_Color.o
+../Bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a: $(_builddir)IshikoTypes_Color.o
 	$(AR) rc $@ $(_builddir)IshikoTypes_Color.o
 	$(RANLIB) $@
 
@@ -66,7 +66,7 @@ $(_builddir)IshikoTypes_Color.o: ../../src/Color.cpp
 clean:
 	rm -f $(_builddir)*.o
 	rm -f $(_builddir)*.d
-	rm -f ../Bakefile/../../Lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
+	rm -f ../Bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
 
 .PHONY: all clean
 
