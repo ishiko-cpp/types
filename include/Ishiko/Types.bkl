@@ -6,7 +6,7 @@ setting ISHIKO_CPP_TYPES_ROOT
 
 template IshikoTypes
 {
-    includedirs += $(ISHIKO_CPP_TYPES_ROOT)/Include;
+    includedirs += $(ISHIKO_CPP_TYPES_ROOT)/include;
 
     if ($(toolset) == gnu)
     {
