@@ -9,17 +9,17 @@ library IshikoTypes
 {
     archs = x86 x86_64;
 
-    includedirs += ../../Include/Ishiko/Types;
+    includedirs += ../../include/Ishiko/Types;
 
     if ($(toolset) == gnu)
     {
         cxx-compiler-options = "-std=c++11";
-        outputdir = ../../Lib;
+        outputdir = ../../lib;
     }
 
     if ($(toolset) != gnu)
     {
-        outputdir = ../../Lib/$(arch);
+        outputdir = ../../lib/$(arch);
     }
 
     if ($(config) == Debug)
@@ -29,15 +29,15 @@ library IshikoTypes
 
     headers
     {
-        ../../Include/Ishiko/Types.h
+        ../../include/Ishiko/Types.h
 
-        ../../Include/Ishiko/Types/Color.h
-        ../../Include/Ishiko/Types/Point2D.h
-        ../../Include/Ishiko/Types/linkoptions.h
+        ../../include/Ishiko/Types/Color.h
+        ../../include/Ishiko/Types/Point2D.h
+        ../../include/Ishiko/Types/linkoptions.h
     }
 
     sources
     {
-        ../../Source/Color.cpp
+        ../../src/Color.cpp
     }
 }

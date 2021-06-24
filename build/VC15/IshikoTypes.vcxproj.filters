@@ -17,21 +17,21 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Include\Ishiko\Types.h">
+    <ClInclude Include="..\..\include\Ishiko\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Ishiko\Types\Color.h">
+    <ClInclude Include="..\..\include\Ishiko\Types\Color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Ishiko\Types\Point2D.h">
+    <ClInclude Include="..\..\include\Ishiko\Types\Point2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Include\Ishiko\Types\linkoptions.h">
+    <ClInclude Include="..\..\include\Ishiko\Types\linkoptions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Color.cpp">
+    <ClCompile Include="..\..\src\Color.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
