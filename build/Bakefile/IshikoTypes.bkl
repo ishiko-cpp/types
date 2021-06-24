@@ -38,6 +38,6 @@ library IshikoTypes
 
     sources
     {
-        ../../Source/Color.cpp
+        ../../src/Color.cpp
     }
 }
