@@ -1,10 +1,10 @@
-# Ishiko/C++ - Types
+# Ishiko/C++ Types
 
 Fundamental types used across several Ishiko/C++ projects.
 
 # Contents
 
-- Include: Directory containing the public headers for the project.
+- include: Directory containing the public headers for the project.
 - Lib: Directory where the build process puts the compiled libraries.
 - Makefiles: The makefiles used to build the project
 - Source: The source code for the project.
@@ -12,7 +12,7 @@ Fundamental types used across several Ishiko/C++ projects.
 
 # Project Status
 
-[![Ishiko-cpp](https://circleci.com/gh/Ishiko-cpp/Types.svg?style=shield)](https://circleci.com/gh/Ishiko-cpp/Types)
+[![ishiko-cpp](https://circleci.com/gh/ishiko-cpp/types.svg?style=shield)](https://circleci.com/gh/ishiko-cpp/types)
 
 This project is intended for use by its author only.
 
