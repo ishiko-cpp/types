@@ -65,7 +65,7 @@ endif
 # 
 
 # Path to the Ishiko Types installation
-ISHIKO_CPP_TYPES_ROOT ?= $(ISHIKO_CPP)/Types
+ISHIKO_CPP_TYPES_ROOT ?= $(ISHIKO_CPP)/types
 # Path to the Ishiko Errors installation
 ISHIKO_CPP_ERRORS_ROOT ?= $(ISHIKO_CPP)/errors
 # Path to the Ishiko Platform installation

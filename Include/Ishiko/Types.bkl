@@ -1,7 +1,7 @@
 setting ISHIKO_CPP_TYPES_ROOT
 {
     help = "Path to the Ishiko Types installation";
-    default = '$(ISHIKO_CPP)/Types';
+    default = '$(ISHIKO_CPP)/types';
 }
 
 template IshikoTypes
