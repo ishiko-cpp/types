@@ -50,13 +50,13 @@ _equal  = $(and $(findstring $(1),$(2)),$(findstring $(2),$(1)))
 builddir = .
 
 ifneq ($(builddir),.)
-_builddir := $(if $(findstring $(abspath $(builddir)),$(builddir)),,../../)$(builddir)/../GNUmakefile/
+_builddir := $(if $(findstring $(abspath $(builddir)),$(builddir)),,../../)$(builddir)/../gnumake/
 _builddir_error := $(shell mkdir -p $(_builddir) 2>&1)
 $(if $(_builddir_error),$(error Failed to create build directory: $(_builddir_error)))
 endif
-all: ../Bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
+all: ../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
 
-../Bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a: $(_builddir)IshikoTypes_Color.o
+../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a: $(_builddir)IshikoTypes_Color.o
 	$(AR) rc $@ $(_builddir)IshikoTypes_Color.o
 	$(RANLIB) $@
 
@@ -66,7 +66,7 @@ $(_builddir)IshikoTypes_Color.o: ../../src/Color.cpp
 clean:
 	rm -f $(_builddir)*.o
 	rm -f $(_builddir)*.d
-	rm -f ../Bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
+	rm -f ../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
 
 .PHONY: all clean
 
