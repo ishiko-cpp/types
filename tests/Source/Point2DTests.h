@@ -7,7 +7,7 @@
 #ifndef _ISHIKO_TYPES_TESTS_POINT2DTESTS_H_
 #define _ISHIKO_TYPES_TESTS_POINT2DTESTS_H_
 
-#include "Ishiko/TestFramework/TestFrameworkCore.h"
+#include <Ishiko/Tests/Core.h>
 
 class Point2DTests : public Ishiko::Tests::TestSequence
 {
