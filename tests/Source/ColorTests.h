@@ -7,7 +7,7 @@
 #ifndef _ISHIKO_TYPES_TESTS_COLORTESTS_H_
 #define _ISHIKO_TYPES_TESTS_COLORTESTS_H_
 
-#include "Ishiko/TestFramework/TestFrameworkCore.h"
+#include <Ishiko/Tests/Core.h>
 
 class ColorTests : public Ishiko::Tests::TestSequence
 {

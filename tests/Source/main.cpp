@@ -6,7 +6,7 @@
 
 #include "ColorTests.h"
 #include "Point2DTests.h"
-#include "Ishiko/TestFramework/TestFrameworkCore.h"
+#include <Ishiko/Tests/Core.h>
 
 using namespace Ishiko::Tests;
 
