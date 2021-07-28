@@ -151,11 +151,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\Color.cpp" />
+    <ClCompile Include="..\..\src\URL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\Ishiko\Types.h" />
     <ClInclude Include="..\..\include\Ishiko\Types\Color.h" />
     <ClInclude Include="..\..\include\Ishiko\Types\Point2D.h" />
+    <ClInclude Include="..\..\include\Ishiko\Types\URL.h" />
     <ClInclude Include="..\..\include\Ishiko\Types\linkoptions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
