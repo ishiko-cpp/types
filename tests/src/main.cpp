@@ -6,6 +6,8 @@
 
 #include "ColorTests.h"
 #include "Point2DTests.h"
+#include "URLTests.h"
+#include "Ishiko/Types/linkoptions.h"
 #include <Ishiko/Tests/Core.h>
 
 using namespace Ishiko::Tests;
@@ -17,6 +19,7 @@ int main(int argc, char* argv[])
     TestSequence& theTests = theTestHarness.tests();
     theTests.append<ColorTests>();
     theTests.append<Point2DTests>();
+    theTests.append<URLTests>();
 
     return theTestHarness.run();
 }
