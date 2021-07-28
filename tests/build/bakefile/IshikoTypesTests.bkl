@@ -24,6 +24,7 @@ program IshikoTypesTests : IshikoTypes, IshikoTestsCore
     {
         ../../src/ColorTests.h
         ../../src/Point2DTests.h
+        ../../src/URLTests.h
     }
 
     sources
@@ -31,5 +32,6 @@ program IshikoTypesTests : IshikoTypes, IshikoTestsCore
         ../../src/main.cpp
         ../../src/ColorTests.cpp
         ../../src/Point2DTests.cpp
+        ../../src/URLTests.cpp
     }
 }

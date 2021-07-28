@@ -89,8 +89,8 @@ ISHIKO_CPP_TESTFRAMEWORK_ROOT ?= $(ISHIKO_CPP)/tests
 
 all: $(_builddir)IshikoTypesTests
 
-$(_builddir)IshikoTypesTests: $(_builddir)IshikoTypesTests_main.o $(_builddir)IshikoTypesTests_ColorTests.o $(_builddir)IshikoTypesTests_Point2DTests.o
-	$(CXX) -o $@ $(LDFLAGS) $(_builddir)IshikoTypesTests_main.o $(_builddir)IshikoTypesTests_ColorTests.o $(_builddir)IshikoTypesTests_Point2DTests.o -L$(ISHIKO_CPP_TYPES_ROOT)/lib -L$(ISHIKO_CPP_ERRORS_ROOT)/lib -L$(ISHIKO_CPP_BOOST_ROOT)/lib -L$(ISHIKO_CPP_FILESYSTEM_ROOT)/lib -L$(ISHIKO_CPP_TEXT_ROOT)/lib -L$(ISHIKO_CPP_DIFF_ROOT)/lib -L$(ISHIKO_CPP_PROCESS_ROOT)/lib -L$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/lib -lIshikoTypes -lIshikoTestsCore -lIshikoProcess -lIshikoErrors -lboost_filesystem -lboost_system -pthread
+$(_builddir)IshikoTypesTests: $(_builddir)IshikoTypesTests_main.o $(_builddir)IshikoTypesTests_ColorTests.o $(_builddir)IshikoTypesTests_Point2DTests.o $(_builddir)IshikoTypesTests_URLTests.o
+	$(CXX) -o $@ $(LDFLAGS) $(_builddir)IshikoTypesTests_main.o $(_builddir)IshikoTypesTests_ColorTests.o $(_builddir)IshikoTypesTests_Point2DTests.o $(_builddir)IshikoTypesTests_URLTests.o -L$(ISHIKO_CPP_TYPES_ROOT)/lib -L$(ISHIKO_CPP_ERRORS_ROOT)/lib -L$(ISHIKO_CPP_BOOST_ROOT)/lib -L$(ISHIKO_CPP_FILESYSTEM_ROOT)/lib -L$(ISHIKO_CPP_TEXT_ROOT)/lib -L$(ISHIKO_CPP_DIFF_ROOT)/lib -L$(ISHIKO_CPP_PROCESS_ROOT)/lib -L$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/lib -lIshikoTypes -lIshikoTestsCore -lIshikoProcess -lIshikoErrors -lboost_filesystem -lboost_system -pthread
 
 $(_builddir)IshikoTypesTests_main.o: ../../src/main.cpp
 	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -pthread -I$(ISHIKO_CPP_TYPES_ROOT)/include -I$(ISHIKO_CPP_ERRORS_ROOT)/include -I$(ISHIKO_CPP_PLATFORM_ROOT)/include -I$(ISHIKO_CPP_BOOST_ROOT)/include -I$(ISHIKO_CPP_FILESYSTEM_ROOT)/include -I$(ISHIKO_CPP_TEXT_ROOT)/include -I$(ISHIKO_CPP_DIFF_ROOT)/include -I$(ISHIKO_CPP_PROCESS_ROOT)/include -I$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/include -std=c++11 ../../src/main.cpp
@@ -100,6 +100,9 @@ $(_builddir)IshikoTypesTests_ColorTests.o: ../../src/ColorTests.cpp
 
 $(_builddir)IshikoTypesTests_Point2DTests.o: ../../src/Point2DTests.cpp
 	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -pthread -I$(ISHIKO_CPP_TYPES_ROOT)/include -I$(ISHIKO_CPP_ERRORS_ROOT)/include -I$(ISHIKO_CPP_PLATFORM_ROOT)/include -I$(ISHIKO_CPP_BOOST_ROOT)/include -I$(ISHIKO_CPP_FILESYSTEM_ROOT)/include -I$(ISHIKO_CPP_TEXT_ROOT)/include -I$(ISHIKO_CPP_DIFF_ROOT)/include -I$(ISHIKO_CPP_PROCESS_ROOT)/include -I$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/include -std=c++11 ../../src/Point2DTests.cpp
+
+$(_builddir)IshikoTypesTests_URLTests.o: ../../src/URLTests.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -pthread -I$(ISHIKO_CPP_TYPES_ROOT)/include -I$(ISHIKO_CPP_ERRORS_ROOT)/include -I$(ISHIKO_CPP_PLATFORM_ROOT)/include -I$(ISHIKO_CPP_BOOST_ROOT)/include -I$(ISHIKO_CPP_FILESYSTEM_ROOT)/include -I$(ISHIKO_CPP_TEXT_ROOT)/include -I$(ISHIKO_CPP_DIFF_ROOT)/include -I$(ISHIKO_CPP_PROCESS_ROOT)/include -I$(ISHIKO_CPP_TESTFRAMEWORK_ROOT)/include -std=c++11 ../../src/URLTests.cpp
 
 clean:
 	rm -f $(_builddir)*.o
