@@ -1,7 +1,7 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2021 Xavier Leclercq
     Released under the MIT License
-    See https://github.com/Ishiko-cpp/Types/blob/master/LICENSE.txt
+    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
 #include "ColorTests.h"
@@ -22,42 +22,42 @@ void ColorTests::ConstructorTest1(Test& test)
 {
     Ishiko::Color color(Ishiko::Color::eBlack);
 
-    ISHTF_FAIL_IF_NEQ(color.red, 0);
-    ISHTF_FAIL_IF_NEQ(color.green, 0);
-    ISHTF_FAIL_IF_NEQ(color.blue, 0);
-    ISHTF_FAIL_IF_NEQ(color.alpha, 0xFF);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(color.red, 0);
+    ISHIKO_FAIL_IF_NEQ(color.green, 0);
+    ISHIKO_FAIL_IF_NEQ(color.blue, 0);
+    ISHIKO_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_PASS();
 }
 
 void ColorTests::ConstructorTest2(Test& test)
 {
     Ishiko::Color color(Ishiko::Color::eGreen);
 
-    ISHTF_FAIL_IF_NEQ(color.red, 0);
-    ISHTF_FAIL_IF_NEQ(color.green, 0xFF);
-    ISHTF_FAIL_IF_NEQ(color.blue, 0);
-    ISHTF_FAIL_IF_NEQ(color.alpha, 0xFF);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(color.red, 0);
+    ISHIKO_FAIL_IF_NEQ(color.green, 0xFF);
+    ISHIKO_FAIL_IF_NEQ(color.blue, 0);
+    ISHIKO_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_PASS();
 }
 
 void ColorTests::ConstructorTest3(Test& test)
 {
     Ishiko::Color color(Ishiko::Color::eRed);
 
-    ISHTF_FAIL_IF_NEQ(color.red, 0xFF);
-    ISHTF_FAIL_IF_NEQ(color.green, 0);
-    ISHTF_FAIL_IF_NEQ(color.blue, 0);
-    ISHTF_FAIL_IF_NEQ(color.alpha, 0xFF);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(color.red, 0xFF);
+    ISHIKO_FAIL_IF_NEQ(color.green, 0);
+    ISHIKO_FAIL_IF_NEQ(color.blue, 0);
+    ISHIKO_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_PASS();
 }
 
 void ColorTests::ConstructorTest4(Test& test)
 {
     Ishiko::Color color(0, 1, 2);
 
-    ISHTF_FAIL_IF_NEQ(color.red, 0);
-    ISHTF_FAIL_IF_NEQ(color.green, 1);
-    ISHTF_FAIL_IF_NEQ(color.blue, 2);
-    ISHTF_FAIL_IF_NEQ(color.alpha, 0xFF);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(color.red, 0);
+    ISHIKO_FAIL_IF_NEQ(color.green, 1);
+    ISHIKO_FAIL_IF_NEQ(color.blue, 2);
+    ISHIKO_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_PASS();
 }

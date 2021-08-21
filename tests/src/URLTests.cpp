@@ -20,6 +20,6 @@ void URLTests::ConstructorTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHTF_FAIL_IF_NEQ(url.str(), "https://ishiko.org");
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(url.str(), "https://ishiko.org");
+    ISHIKO_PASS();
 }

@@ -1,7 +1,7 @@
 /*
     Copyright (c) 2021 Xavier Leclercq
     Released under the MIT License
-    See https://github.com/Ishiko-cpp/Types/blob/master/LICENSE.txt
+    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
 #include "Point2DTests.h"
@@ -28,45 +28,45 @@ void Point2DTests::ConstructorTest1(Test& test)
 {
     Point2D<int> point{};
 
-    ISHTF_FAIL_IF_NEQ(point.x, 0);
-    ISHTF_FAIL_IF_NEQ(point.y, 0);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(point.x, 0);
+    ISHIKO_FAIL_IF_NEQ(point.y, 0);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::ConstructorTest2(Test& test)
 {
     Point2D<int> point(1, 2);
 
-    ISHTF_FAIL_IF_NEQ(point.x, 1);
-    ISHTF_FAIL_IF_NEQ(point.y, 2);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(point.x, 1);
+    ISHIKO_FAIL_IF_NEQ(point.y, 2);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::ConstructorTest3(Test& test)
 {
     Point2D<int> point({});
 
-    ISHTF_FAIL_IF_NEQ(point.x, 0);
-    ISHTF_FAIL_IF_NEQ(point.y, 0);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(point.x, 0);
+    ISHIKO_FAIL_IF_NEQ(point.y, 0);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::ConstructorTest4(Test& test)
 {
     Point2D<int> point({ 1 });
 
-    ISHTF_FAIL_IF_NEQ(point.x, 1);
-    ISHTF_FAIL_IF_NEQ(point.y, 0);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(point.x, 1);
+    ISHIKO_FAIL_IF_NEQ(point.y, 0);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::ConstructorTest5(Test& test)
 {
     Point2D<int> point({ 1, 2 });
 
-    ISHTF_FAIL_IF_NEQ(point.x, 1);
-    ISHTF_FAIL_IF_NEQ(point.y, 2);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NEQ(point.x, 1);
+    ISHIKO_FAIL_IF_NEQ(point.y, 2);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::EqualityOperatorTest1(Test& test)
@@ -76,8 +76,8 @@ void Point2DTests::EqualityOperatorTest1(Test& test)
 
     bool result = (point1 == point2);
 
-    ISHTF_FAIL_IF_NOT(result);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NOT(result);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::EqualityOperatorTest2(Test& test)
@@ -87,8 +87,8 @@ void Point2DTests::EqualityOperatorTest2(Test& test)
 
     bool result = (point1 == point2);
 
-    ISHTF_FAIL_IF(result);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF(result);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::InequalityOperatorTest1(Test& test)
@@ -98,8 +98,8 @@ void Point2DTests::InequalityOperatorTest1(Test& test)
 
     bool result = (point1 != point2);
 
-    ISHTF_FAIL_IF_NOT(result);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF_NOT(result);
+    ISHIKO_PASS();
 }
 
 void Point2DTests::InequalityOperatorTest2(Test& test)
@@ -109,6 +109,6 @@ void Point2DTests::InequalityOperatorTest2(Test& test)
 
     bool result = (point1 != point2);
 
-    ISHTF_FAIL_IF(result);
-    ISHTF_PASS();
+    ISHIKO_FAIL_IF(result);
+    ISHIKO_PASS();
 }
