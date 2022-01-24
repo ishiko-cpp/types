@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2020-2021 Xavier Leclercq
+    Copyright (c) 2020-2022 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
@@ -9,8 +9,8 @@
 
 using namespace Ishiko::Tests;
 
-ColorTests::ColorTests(const TestNumber& number, const TestEnvironment& environment)
-    : TestSequence(number, "Color tests", environment)
+ColorTests::ColorTests(const TestNumber& number, const TestContext& context)
+    : TestSequence(number, "Color tests", context)
 {
     append<HeapAllocationErrorsTest>("Constructor test 1", ConstructorTest1);
     append<HeapAllocationErrorsTest>("Constructor test 2", ConstructorTest2);
