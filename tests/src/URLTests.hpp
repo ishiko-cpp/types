@@ -16,6 +16,10 @@ public:
 
 private:
     static void ConstructorTest1(Ishiko::Tests::Test& test);
+    static void EqualityOperatorTest1(Ishiko::Tests::Test& test);
+    static void EqualityOperatorTest2(Ishiko::Tests::Test& test);
+    static void InequalityOperatorTest1(Ishiko::Tests::Test& test);
+    static void InequalityOperatorTest2(Ishiko::Tests::Test& test);
 };
 
 #endif

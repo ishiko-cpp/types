@@ -14,6 +14,16 @@ URL::URL(const std::string& url)
 {
 }
 
+bool URL::operator==(const std::string& other) const noexcept
+{
+    return (m_url == other);
+}
+
+bool URL::operator!=(const std::string& other) const noexcept
+{
+    return (m_url != other);
+}
+
 const std::string& URL::str() const
 {
     return m_url;

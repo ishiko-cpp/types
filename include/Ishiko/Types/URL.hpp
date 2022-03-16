@@ -17,6 +17,9 @@ class URL
 public:
     URL(const std::string& url);
 
+    bool operator==(const std::string& other) const noexcept;
+    bool operator!=(const std::string& other) const noexcept;
+
     const std::string& str() const;
 
 private:
