@@ -22,9 +22,9 @@ program IshikoTypesTests : IshikoTypes, IshikoTestsCore
 
     headers
     {
-        ../../src/ColorTests.h
-        ../../src/Point2DTests.h
-        ../../src/URLTests.h
+        ../../src/ColorTests.hpp
+        ../../src/Point2DTests.hpp
+        ../../src/URLTests.hpp
     }
 
     sources

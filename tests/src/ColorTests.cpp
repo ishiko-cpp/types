@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#include "ColorTests.h"
-#include "Ishiko/Types/Color.h"
+#include "ColorTests.hpp"
+#include "Ishiko/Types/Color.hpp"
 
 using namespace Ishiko::Tests;
 

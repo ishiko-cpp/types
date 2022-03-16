@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#include "URLTests.h"
-#include "Ishiko/Types/URL.h"
+#include "URLTests.hpp"
+#include "Ishiko/Types/URL.hpp"
 
 using namespace Ishiko;
 using namespace Ishiko::Tests;

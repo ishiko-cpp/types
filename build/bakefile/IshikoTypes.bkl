@@ -30,11 +30,11 @@ library IshikoTypes
 
     headers
     {
-        ../../include/Ishiko/Types.h
-        ../../include/Ishiko/Types/Color.h
-        ../../include/Ishiko/Types/Point2D.h
-        ../../include/Ishiko/Types/URL.h
-        ../../include/Ishiko/Types/linkoptions.h
+        ../../include/Ishiko/Types.hpp
+        ../../include/Ishiko/Types/Color.hpp
+        ../../include/Ishiko/Types/Point2D.hpp
+        ../../include/Ishiko/Types/URL.hpp
+        ../../include/Ishiko/Types/linkoptions.hpp
     }
 
     sources

@@ -4,10 +4,10 @@
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#include "ColorTests.h"
-#include "Point2DTests.h"
-#include "URLTests.h"
-#include "Ishiko/Types/linkoptions.h"
+#include "ColorTests.hpp"
+#include "Point2DTests.hpp"
+#include "URLTests.hpp"
+#include "Ishiko/Types/linkoptions.hpp"
 #include <Ishiko/Tests/Core.hpp>
 
 using namespace Ishiko::Tests;

@@ -1,10 +1,10 @@
 /*
-    Copyright (c) 2020 Xavier Leclercq
+    Copyright (c) 2020-2022 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#include "Color.h"
+#include "Color.hpp"
 
 namespace Ishiko
 {

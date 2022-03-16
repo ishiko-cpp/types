@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#ifndef _ISHIKO_TYPES_TESTS_POINT2DTESTS_H_
-#define _ISHIKO_TYPES_TESTS_POINT2DTESTS_H_
+#ifndef _ISHIKO_CPP_TYPES_TESTS_POINT2DTESTS_HPP_
+#define _ISHIKO_CPP_TYPES_TESTS_POINT2DTESTS_HPP_
 
 #include <Ishiko/Tests/Core.hpp>
 
