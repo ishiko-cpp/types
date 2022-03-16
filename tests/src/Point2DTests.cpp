@@ -4,8 +4,8 @@
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#include "Point2DTests.h"
-#include "Ishiko/Types/Point2D.h"
+#include "Point2DTests.hpp"
+#include "Ishiko/Types/Point2D.hpp"
 
 using namespace Ishiko;
 using namespace Ishiko::Tests;

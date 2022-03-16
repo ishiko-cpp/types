@@ -158,9 +158,9 @@
     <ClCompile Include="..\..\src\URLTests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\ColorTests.h" />
-    <ClInclude Include="..\..\src\Point2DTests.h" />
-    <ClInclude Include="..\..\src\URLTests.h" />
+    <ClInclude Include="..\..\src\ColorTests.hpp" />
+    <ClInclude Include="..\..\src\Point2DTests.hpp" />
+    <ClInclude Include="..\..\src\URLTests.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,10 +1,10 @@
 /*
-    Copyright (c) 2021 Xavier Leclercq
+    Copyright (c) 2021-2022 Xavier Leclercq
     Released under the MIT License
     See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
 */
 
-#include "URL.h"
+#include "URL.hpp"
 
 namespace Ishiko
 {
@@ -12,6 +12,16 @@ namespace Ishiko
 URL::URL(const std::string& url)
     : m_url(url)
 {
+}
+
+bool URL::operator==(const std::string& other) const noexcept
+{
+    return (m_url == other);
+}
+
+bool URL::operator!=(const std::string& other) const noexcept
+{
+    return (m_url != other);
 }
 
 const std::string& URL::str() const
