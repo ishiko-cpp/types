@@ -16,6 +16,14 @@ public:
 
 private:
     static void ConstructorTest1(Ishiko::Tests::Test& test);
+    static void SchemeTest1(Ishiko::Tests::Test& test);
+    static void AuthorityTest1(Ishiko::Tests::Test& test);
+    static void HostTest1(Ishiko::Tests::Test& test);
+    static void PathTest1(Ishiko::Tests::Test& test);
+    static void PathTest2(Ishiko::Tests::Test& test);
+    static void PathTest3(Ishiko::Tests::Test& test);
+    static void QueryTest1(Ishiko::Tests::Test& test);
+    static void FragmentTest1(Ishiko::Tests::Test& test);
     static void EqualityOperatorTest1(Ishiko::Tests::Test& test);
     static void EqualityOperatorTest2(Ishiko::Tests::Test& test);
     static void InequalityOperatorTest1(Ishiko::Tests::Test& test);

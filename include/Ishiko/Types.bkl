@@ -1,10 +1,13 @@
+ishikopath = envvar("ISHIKO_CPP");
+import $(ishikopath)/third-party-glue/include/Ishiko/ThirdParty/Boost.bkl;
+
 setting ISHIKO_CPP_TYPES_ROOT
 {
     help = "Path to the Ishiko Types installation";
     default = '$(ISHIKO_CPP)/types';
 }
 
-template IshikoTypes
+template IshikoTypes : Boost
 {
     includedirs += $(ISHIKO_CPP_TYPES_ROOT)/include;
 
