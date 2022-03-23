@@ -9,16 +9,16 @@
 
 #include <Ishiko/Tests/Core.hpp>
 
-class ColorTests : public Ishiko::Tests::TestSequence
+class ColorTests : public Ishiko::TestSequence
 {
 public:
-    ColorTests(const Ishiko::Tests::TestNumber& number, const Ishiko::Tests::TestContext& context);
+    ColorTests(const Ishiko::TestNumber& number, const Ishiko::TestContext& context);
 
 private:
-    static void ConstructorTest1(Ishiko::Tests::Test& test);
-    static void ConstructorTest2(Ishiko::Tests::Test& test);
-    static void ConstructorTest3(Ishiko::Tests::Test& test);
-    static void ConstructorTest4(Ishiko::Tests::Test& test);
+    static void ConstructorTest1(Ishiko::Test& test);
+    static void ConstructorTest2(Ishiko::Test& test);
+    static void ConstructorTest3(Ishiko::Test& test);
+    static void ConstructorTest4(Ishiko::Test& test);
 };
 
 #endif
