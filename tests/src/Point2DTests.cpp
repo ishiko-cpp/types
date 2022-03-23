@@ -8,7 +8,6 @@
 #include "Ishiko/Types/Point2D.hpp"
 
 using namespace Ishiko;
-using namespace Ishiko::Tests;
 
 Point2DTests::Point2DTests(const TestNumber& number, const TestContext& context)
     : TestSequence(number, "Point2D tests", context)
@@ -28,45 +27,45 @@ void Point2DTests::ConstructorTest1(Test& test)
 {
     Point2D<int> point{};
 
-    ISHIKO_FAIL_IF_NEQ(point.x, 0);
-    ISHIKO_FAIL_IF_NEQ(point.y, 0);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(point.x, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(point.y, 0);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::ConstructorTest2(Test& test)
 {
     Point2D<int> point(1, 2);
 
-    ISHIKO_FAIL_IF_NEQ(point.x, 1);
-    ISHIKO_FAIL_IF_NEQ(point.y, 2);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(point.x, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(point.y, 2);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::ConstructorTest3(Test& test)
 {
     Point2D<int> point({});
 
-    ISHIKO_FAIL_IF_NEQ(point.x, 0);
-    ISHIKO_FAIL_IF_NEQ(point.y, 0);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(point.x, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(point.y, 0);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::ConstructorTest4(Test& test)
 {
     Point2D<int> point({ 1 });
 
-    ISHIKO_FAIL_IF_NEQ(point.x, 1);
-    ISHIKO_FAIL_IF_NEQ(point.y, 0);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(point.x, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(point.y, 0);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::ConstructorTest5(Test& test)
 {
     Point2D<int> point({ 1, 2 });
 
-    ISHIKO_FAIL_IF_NEQ(point.x, 1);
-    ISHIKO_FAIL_IF_NEQ(point.y, 2);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(point.x, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(point.y, 2);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::EqualityOperatorTest1(Test& test)
@@ -76,8 +75,8 @@ void Point2DTests::EqualityOperatorTest1(Test& test)
 
     bool result = (point1 == point2);
 
-    ISHIKO_FAIL_IF_NOT(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NOT(result);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::EqualityOperatorTest2(Test& test)
@@ -87,8 +86,8 @@ void Point2DTests::EqualityOperatorTest2(Test& test)
 
     bool result = (point1 == point2);
 
-    ISHIKO_FAIL_IF(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF(result);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::InequalityOperatorTest1(Test& test)
@@ -98,8 +97,8 @@ void Point2DTests::InequalityOperatorTest1(Test& test)
 
     bool result = (point1 != point2);
 
-    ISHIKO_FAIL_IF_NOT(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NOT(result);
+    ISHIKO_TEST_PASS();
 }
 
 void Point2DTests::InequalityOperatorTest2(Test& test)
@@ -109,6 +108,6 @@ void Point2DTests::InequalityOperatorTest2(Test& test)
 
     bool result = (point1 != point2);
 
-    ISHIKO_FAIL_IF(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF(result);
+    ISHIKO_TEST_PASS();
 }
