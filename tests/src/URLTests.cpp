@@ -8,7 +8,6 @@
 #include "Ishiko/Types/URL.hpp"
 
 using namespace Ishiko;
-using namespace Ishiko::Tests;
 
 URLTests::URLTests(const TestNumber& number, const TestContext& context)
     : TestSequence(number, "URL tests", context)
@@ -32,74 +31,74 @@ void URLTests::ConstructorTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_FAIL_IF_NEQ(url.str(), "https://ishiko.org");
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(url.str(), "https://ishiko.org");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::SchemeTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_FAIL_IF_NEQ(url.scheme(), "https");
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(url.scheme(), "https");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::AuthorityTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_ABORT_IF_NOT(url.authority().has_value());
-    ISHIKO_FAIL_IF_NEQ(url.authority().value(), "ishiko.org");
-    ISHIKO_PASS();
+    ISHIKO_TEST_ABORT_IF_NOT(url.authority().has_value());
+    ISHIKO_TEST_FAIL_IF_NEQ(url.authority().value(), "ishiko.org");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::HostTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_ABORT_IF_NOT(url.host().has_value());
-    ISHIKO_FAIL_IF_NEQ(url.host().value(), "ishiko.org");
-    ISHIKO_PASS();
+    ISHIKO_TEST_ABORT_IF_NOT(url.host().has_value());
+    ISHIKO_TEST_FAIL_IF_NEQ(url.host().value(), "ishiko.org");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::PathTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_FAIL_IF_NEQ(url.path(), "");
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(url.path(), "");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::PathTest2(Test& test)
 {
     URL url("https://ishiko.org/");
 
-    ISHIKO_FAIL_IF_NEQ(url.path(), "/");
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(url.path(), "/");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::PathTest3(Test& test)
 {
     URL url("https://ishiko.org/index.html");
 
-    ISHIKO_FAIL_IF_NEQ(url.path(), "/index.html");
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NEQ(url.path(), "/index.html");
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::QueryTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_ABORT_IF(url.query().has_value());
-    ISHIKO_PASS();
+    ISHIKO_TEST_ABORT_IF(url.query().has_value());
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::FragmentTest1(Test& test)
 {
     URL url("https://ishiko.org");
 
-    ISHIKO_ABORT_IF(url.fragment().has_value());
-    ISHIKO_PASS();
+    ISHIKO_TEST_ABORT_IF(url.fragment().has_value());
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::EqualityOperatorTest1(Test& test)
@@ -108,8 +107,8 @@ void URLTests::EqualityOperatorTest1(Test& test)
 
     bool result = (url == "https://ishiko.org");
 
-    ISHIKO_FAIL_IF_NOT(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NOT(result);
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::EqualityOperatorTest2(Test& test)
@@ -118,8 +117,8 @@ void URLTests::EqualityOperatorTest2(Test& test)
 
     bool result = (url == "wrong");
 
-    ISHIKO_FAIL_IF(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF(result);
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::InequalityOperatorTest1(Test& test)
@@ -128,8 +127,8 @@ void URLTests::InequalityOperatorTest1(Test& test)
 
     bool result = (url != "wrong");
 
-    ISHIKO_FAIL_IF_NOT(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF_NOT(result);
+    ISHIKO_TEST_PASS();
 }
 
 void URLTests::InequalityOperatorTest2(Test& test)
@@ -138,6 +137,6 @@ void URLTests::InequalityOperatorTest2(Test& test)
 
     bool result = (url != "https://ishiko.org");
 
-    ISHIKO_FAIL_IF(result);
-    ISHIKO_PASS();
+    ISHIKO_TEST_FAIL_IF(result);
+    ISHIKO_TEST_PASS();
 }
