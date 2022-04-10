@@ -7,7 +7,7 @@
 #ifndef _ISHIKO_CPP_TYPES_TESTS_URLTESTS_HPP_
 #define _ISHIKO_CPP_TYPES_TESTS_URLTESTS_HPP_
 
-#include <Ishiko/Tests/Core.hpp>
+#include <Ishiko/TestFramework/Core.hpp>
 
 class URLTests : public Ishiko::TestSequence
 {

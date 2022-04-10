@@ -8,7 +8,7 @@
 #include "Point2DTests.hpp"
 #include "URLTests.hpp"
 #include "Ishiko/Types/linkoptions.hpp"
-#include <Ishiko/Tests/Core.hpp>
+#include <Ishiko/TestFramework/Core.hpp>
 
 using namespace Ishiko;
 
