@@ -9,6 +9,7 @@
 
 #include "Types/Color.hpp"
 #include "Types/Point2D.hpp"
+#include "Types/Uint128.hpp"
 #include "Types/URL.hpp"
 
 #include "Types/linkoptions.hpp"

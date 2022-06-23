@@ -151,14 +151,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\Color.cpp" />
+    <ClCompile Include="..\..\src\Uint128.cpp" />
     <ClCompile Include="..\..\src\URL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\Ishiko\Types.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\Color.hpp" />
-    <ClInclude Include="..\..\include\Ishiko\Types\Point2D.hpp" />
-    <ClInclude Include="..\..\include\Ishiko\Types\URL.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\linkoptions.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\Types\Point2D.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\Types\Uint128.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\Types\URL.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
