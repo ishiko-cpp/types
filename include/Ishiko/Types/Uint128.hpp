@@ -7,4 +7,13 @@
 #ifndef _ISHIKO_CPP_TYPES_UINT128_HPP_
 #define _ISHIKO_CPP_TYPES_UINT128_HPP_
 
+namespace Ishiko
+{
+
+class Uint128
+{
+};
+
+}
+
 #endif
