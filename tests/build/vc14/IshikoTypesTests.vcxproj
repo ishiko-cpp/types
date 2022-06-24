@@ -155,11 +155,13 @@
     <ClCompile Include="..\..\src\main.cpp" />
     <ClCompile Include="..\..\src\ColorTests.cpp" />
     <ClCompile Include="..\..\src\Point2DTests.cpp" />
+    <ClCompile Include="..\..\src\Uint128Tests.cpp" />
     <ClCompile Include="..\..\src\URLTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\ColorTests.hpp" />
     <ClInclude Include="..\..\src\Point2DTests.hpp" />
+    <ClInclude Include="..\..\src\Uint128Tests.hpp" />
     <ClInclude Include="..\..\src\URLTests.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
