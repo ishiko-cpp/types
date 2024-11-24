@@ -3,6 +3,7 @@
 
 #include "ColorTests.hpp"
 #include "Ishiko/Types/Color.hpp"
+#include "Ishiko/Types/ColorName.hpp"
 
 using namespace Ishiko;
 
@@ -17,7 +18,7 @@ ColorTests::ColorTests(const TestNumber& number, const TestContext& context)
 
 void ColorTests::ConstructorTest1(Test& test)
 {
-    Color color(Color::black);
+    Color color(ColorName::black);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0);
@@ -28,7 +29,7 @@ void ColorTests::ConstructorTest1(Test& test)
 
 void ColorTests::ConstructorTest2(Test& test)
 {
-    Ishiko::Color color(Ishiko::Color::green);
+    Color color(ColorName::green);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0xFF);
@@ -39,7 +40,7 @@ void ColorTests::ConstructorTest2(Test& test)
 
 void ColorTests::ConstructorTest3(Test& test)
 {
-    Ishiko::Color color(Ishiko::Color::red);
+    Color color(ColorName::red);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0xFF);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0);
@@ -50,7 +51,7 @@ void ColorTests::ConstructorTest3(Test& test)
 
 void ColorTests::ConstructorTest4(Test& test)
 {
-    Ishiko::Color color(0, 1, 2);
+    Color color(0, 1, 2);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 1);

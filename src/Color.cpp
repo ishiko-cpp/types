@@ -5,27 +5,27 @@
 
 using namespace Ishiko;
 
-Color::Color(Name color) noexcept
+Color::Color(ColorName color) noexcept
 {
-    switch(color)
+    switch (color)
     {
-        case black:
-            red_component = 0;
-            green_component = 0;
-            blue_component = 0;
-            break;
+    case ColorName::black:
+        red_component = 0;
+        green_component = 0;
+        blue_component = 0;
+        break;
 
-        case green:
-            red_component = 0;
-            green_component = 0xFF;
-            blue_component = 0;
-            break;
+    case ColorName::green:
+        red_component = 0;
+        green_component = 0xFF;
+        blue_component = 0;
+        break;
 
-        case red:
-            red_component = 0xFF;
-            green_component = 0;
-            blue_component = 0;
-            break;
+    case ColorName::red:
+        red_component = 0xFF;
+        green_component = 0;
+        blue_component = 0;
+        break;
     }
     
     alpha_component = 0xFF;

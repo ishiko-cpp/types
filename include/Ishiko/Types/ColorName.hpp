@@ -4,4 +4,15 @@
 #ifndef GUARD_ISHIKO_CPP_TYPES_COLORNAME_HPP
 #define GUARD_ISHIKO_CPP_TYPES_COLORNAME_HPP
 
+
+namespace Ishiko
+{
+    enum class ColorName
+    {
+        black,
+        green,
+        red
+    };
+}
+
 #endif

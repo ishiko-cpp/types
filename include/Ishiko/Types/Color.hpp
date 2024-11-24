@@ -4,18 +4,13 @@
 #ifndef GUARD_ISHIKO_CPP_TYPES_COLOR_HPP
 #define GUARD_ISHIKO_CPP_TYPES_COLOR_HPP
 
+#include "ColorName.hpp"
+
 namespace Ishiko
 {
     struct Color
     {
-        enum Name
-        {
-            black,
-            green,
-            red
-        };
-
-        Color(Name color) noexcept;
+        Color(ColorName color) noexcept;
         Color(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept;
 
         unsigned char red_component;
