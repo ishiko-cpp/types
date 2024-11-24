@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\include\Ishiko\Types.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\Color.hpp" />
+    <ClInclude Include="..\..\include\Ishiko\Types\ColorName.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\linkoptions.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\Point2D.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\Uint128.hpp" />

@@ -35,6 +35,7 @@ library IshikoTypes : Boost
     {
         ../../include/Ishiko/Types.hpp
         ../../include/Ishiko/Types/Color.hpp
+        ../../include/Ishiko/Types/ColorName.hpp
         ../../include/Ishiko/Types/linkoptions.hpp
         ../../include/Ishiko/Types/Point2D.hpp
         ../../include/Ishiko/Types/Uint128.hpp

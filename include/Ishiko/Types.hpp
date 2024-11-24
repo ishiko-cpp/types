@@ -5,6 +5,7 @@
 #define GUARD_ISHIKO_CPP_TYPES_HPP
 
 #include "Types/Color.hpp"
+#include "Types/ColorName.hpp"
 #include "Types/Point2D.hpp"
 #include "Types/Uint128.hpp"
 #include "Types/URL.hpp"

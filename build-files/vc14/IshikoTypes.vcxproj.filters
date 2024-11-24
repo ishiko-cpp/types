@@ -23,6 +23,9 @@
     <ClInclude Include="..\..\include\Ishiko\Types\Color.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\include\Ishiko\Types\ColorName.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\include\Ishiko\Types\linkoptions.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
