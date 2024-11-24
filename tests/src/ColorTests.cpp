@@ -1,8 +1,5 @@
-/*
-    Copyright (c) 2020-2022 Xavier Leclercq
-    Released under the MIT License
-    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
-*/
+// SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
+// SPDX-License-Identifier: BSL-1.0
 
 #include "ColorTests.hpp"
 #include "Ishiko/Types/Color.hpp"
@@ -20,34 +17,34 @@ ColorTests::ColorTests(const TestNumber& number, const TestContext& context)
 
 void ColorTests::ConstructorTest1(Test& test)
 {
-    Ishiko::Color color(Ishiko::Color::eBlack);
+    Color color(Color::black);
 
-    ISHIKO_TEST_FAIL_IF_NEQ(color.red, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.green, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.blue, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.blue_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha_component, 0xFF);
     ISHIKO_TEST_PASS();
 }
 
 void ColorTests::ConstructorTest2(Test& test)
 {
-    Ishiko::Color color(Ishiko::Color::eGreen);
+    Ishiko::Color color(Ishiko::Color::green);
 
-    ISHIKO_TEST_FAIL_IF_NEQ(color.red, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.green, 0xFF);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.blue, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0xFF);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.blue_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha_component, 0xFF);
     ISHIKO_TEST_PASS();
 }
 
 void ColorTests::ConstructorTest3(Test& test)
 {
-    Ishiko::Color color(Ishiko::Color::eRed);
+    Ishiko::Color color(Ishiko::Color::red);
 
-    ISHIKO_TEST_FAIL_IF_NEQ(color.red, 0xFF);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.green, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.blue, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0xFF);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.blue_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha_component, 0xFF);
     ISHIKO_TEST_PASS();
 }
 
@@ -55,9 +52,9 @@ void ColorTests::ConstructorTest4(Test& test)
 {
     Ishiko::Color color(0, 1, 2);
 
-    ISHIKO_TEST_FAIL_IF_NEQ(color.red, 0);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.green, 1);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.blue, 2);
-    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha, 0xFF);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 1);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.blue_component, 2);
+    ISHIKO_TEST_FAIL_IF_NEQ(color.alpha_component, 0xFF);
     ISHIKO_TEST_PASS();
 }

@@ -1,11 +1,8 @@
-/*
-    Copyright (c) 2020-2022 Xavier Leclercq
-    Released under the MIT License
-    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
-*/
+// SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
+// SPDX-License-Identifier: BSL-1.0
 
-#ifndef _ISHIKO_CPP_TYPES_TESTS_COLORTESTS_HPP_
-#define _ISHIKO_CPP_TYPES_TESTS_COLORTESTS_HPP_
+#ifndef GUARD_ISHIKO_CPP_TYPES_TESTS_COLORTESTS_HPP
+#define GUARD_ISHIKO_CPP_TYPES_TESTS_COLORTESTS_HPP
 
 #include <Ishiko/TestFramework/Core.hpp>
 
