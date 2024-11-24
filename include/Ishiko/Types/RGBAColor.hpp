@@ -8,10 +8,10 @@
 
 namespace Ishiko
 {
-    struct Color
+    struct RGBAColor
     {
-        Color(ColorName color) noexcept;
-        Color(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept;
+        RGBAColor(ColorName color) noexcept;
+        RGBAColor(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept;
 
         unsigned char red_component;
         unsigned char green_component;

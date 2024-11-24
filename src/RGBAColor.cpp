@@ -5,7 +5,7 @@
 
 using namespace Ishiko;
 
-Color::Color(ColorName color) noexcept
+RGBAColor::RGBAColor(ColorName color) noexcept
 {
     switch (color)
     {
@@ -31,7 +31,7 @@ Color::Color(ColorName color) noexcept
     alpha_component = 0xFF;
 }
 
-Color::Color(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept
+RGBAColor::RGBAColor(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept
     : red_component(red_component), green_component(green_component), blue_component(blue_component),
     alpha_component(0xFF)
 {
