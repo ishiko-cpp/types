@@ -1,14 +1,14 @@
 // SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
 // SPDX-License-Identifier: BSL-1.0
 
-#include "ColorTests.hpp"
-#include "Ishiko/Types/Color.hpp"
+#include "RGBAColorTests.hpp"
+#include "Ishiko/Types/RGBAColor.hpp"
 #include "Ishiko/Types/ColorName.hpp"
 
 using namespace Ishiko;
 
-ColorTests::ColorTests(const TestNumber& number, const TestContext& context)
-    : TestSequence(number, "Color tests", context)
+RGBAColorTests::RGBAColorTests(const TestNumber& number, const TestContext& context)
+    : TestSequence(number, "RGBAColor tests", context)
 {
     append<HeapAllocationErrorsTest>("Constructor test 1", ConstructorTest1);
     append<HeapAllocationErrorsTest>("Constructor test 2", ConstructorTest2);
@@ -16,9 +16,9 @@ ColorTests::ColorTests(const TestNumber& number, const TestContext& context)
     append<HeapAllocationErrorsTest>("Constructor test 4", ConstructorTest4);
 }
 
-void ColorTests::ConstructorTest1(Test& test)
+void RGBAColorTests::ConstructorTest1(Test& test)
 {
-    Color color(ColorName::black);
+    RGBAColor color(ColorName::black);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0);
@@ -27,9 +27,9 @@ void ColorTests::ConstructorTest1(Test& test)
     ISHIKO_TEST_PASS();
 }
 
-void ColorTests::ConstructorTest2(Test& test)
+void RGBAColorTests::ConstructorTest2(Test& test)
 {
-    Color color(ColorName::green);
+    RGBAColor color(ColorName::green);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0xFF);
@@ -38,9 +38,9 @@ void ColorTests::ConstructorTest2(Test& test)
     ISHIKO_TEST_PASS();
 }
 
-void ColorTests::ConstructorTest3(Test& test)
+void RGBAColorTests::ConstructorTest3(Test& test)
 {
-    Color color(ColorName::red);
+    RGBAColor color(ColorName::red);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0xFF);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 0);
@@ -49,9 +49,9 @@ void ColorTests::ConstructorTest3(Test& test)
     ISHIKO_TEST_PASS();
 }
 
-void ColorTests::ConstructorTest4(Test& test)
+void RGBAColorTests::ConstructorTest4(Test& test)
 {
-    Color color(0, 1, 2);
+    RGBAColor color(0, 1, 2);
 
     ISHIKO_TEST_FAIL_IF_NEQ(color.red_component, 0);
     ISHIKO_TEST_FAIL_IF_NEQ(color.green_component, 1);

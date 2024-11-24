@@ -1,10 +1,7 @@
-/*
-    Copyright (c) 2020-2022 Xavier Leclercq
-    Released under the MIT License
-    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
-*/
+// SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
+// SPDX-License-Identifier: BSL-1.0
 
-#include "ColorTests.hpp"
+#include "RGBAColorTests.hpp"
 #include "Point2DTests.hpp"
 #include "Uint128Tests.hpp"
 #include "URLTests.hpp"
@@ -18,7 +15,7 @@ int main(int argc, char* argv[])
     TestHarness theTestHarness("IshikoTypes");
 
     TestSequence& theTests = theTestHarness.tests();
-    theTests.append<ColorTests>();
+    theTests.append<RGBAColorTests>();
     theTests.append<Point2DTests>();
     theTests.append<Uint128Tests>();
     theTests.append<URLTests>();
