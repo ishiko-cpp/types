@@ -1,43 +1,38 @@
-/*
-    Copyright (c) 2020-2022 Xavier Leclercq
-    Released under the MIT License
-    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
-*/
+// SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
+// SPDX-License-Identifier: BSL-1.0
 
 #include "Color.hpp"
 
-namespace Ishiko
-{
+using namespace Ishiko;
 
-Color::Color(EColor color) noexcept
+Color::Color(Name color) noexcept
 {
     switch(color)
     {
-        case eBlack:
-            red = 0;
-            green = 0;
-            blue = 0;
+        case black:
+            red_component = 0;
+            green_component = 0;
+            blue_component = 0;
             break;
 
-        case eGreen:
-            red = 0;
-            green = 0xFF;
-            blue = 0;
+        case green:
+            red_component = 0;
+            green_component = 0xFF;
+            blue_component = 0;
             break;
 
-        case eRed:
-            red = 0xFF;
-            green = 0;
-            blue = 0;
+        case red:
+            red_component = 0xFF;
+            green_component = 0;
+            blue_component = 0;
             break;
     }
     
-    alpha = 0xFF;
+    alpha_component = 0xFF;
 }
 
-Color::Color(unsigned char red, unsigned char green, unsigned char blue) noexcept
-    : red(red), green(green), blue(blue), alpha(0xFF)
+Color::Color(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept
+    : red_component(red_component), green_component(green_component), blue_component(blue_component),
+    alpha_component(0xFF)
 {
-}
-
 }

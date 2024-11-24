@@ -1,33 +1,28 @@
-/*
-    Copyright (c) 2020-2022 Xavier Leclercq
-    Released under the MIT License
-    See https://github.com/ishiko-cpp/types/blob/main/LICENSE.txt
-*/
+// SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
+// SPDX-License-Identifier: BSL-1.0
 
-#ifndef _ISHIKO_CPP_TYPES_COLOR_HPP_
-#define _ISHIKO_CPP_TYPES_COLOR_HPP_
+#ifndef GUARD_ISHIKO_CPP_TYPES_COLOR_HPP
+#define GUARD_ISHIKO_CPP_TYPES_COLOR_HPP
 
 namespace Ishiko
 {
-
-struct Color
-{
-    enum EColor
+    struct Color
     {
-        eBlack,
-        eGreen,
-        eRed
+        enum Name
+        {
+            black,
+            green,
+            red
+        };
+
+        Color(Name color) noexcept;
+        Color(unsigned char red_component, unsigned char green_component, unsigned char blue_component) noexcept;
+
+        unsigned char red_component;
+        unsigned char green_component;
+        unsigned char blue_component;
+        unsigned char alpha_component;
     };
-
-    Color(EColor color) noexcept;
-    Color(unsigned char red, unsigned char green, unsigned char blue) noexcept;
-
-    unsigned char red;
-    unsigned char green;
-    unsigned char blue;
-    unsigned char alpha;
-};
-
 }
 
 #endif
