@@ -71,12 +71,12 @@ ISHIKO_CPP_BOOST_ROOT ?= $(BOOST_ROOT)
 
 all: ../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a
 
-../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a: $(_builddir)IshikoTypes_Color.o $(_builddir)IshikoTypes_Uint128.o $(_builddir)IshikoTypes_URL.o
-	$(AR) rc $@ $(_builddir)IshikoTypes_Color.o $(_builddir)IshikoTypes_Uint128.o $(_builddir)IshikoTypes_URL.o
+../bakefile/../../lib/lib$(if $(call _equal,$(config),Debug),IshikoTypes-d,IshikoTypes).a: $(_builddir)IshikoTypes_RGBAColor.o $(_builddir)IshikoTypes_Uint128.o $(_builddir)IshikoTypes_URL.o
+	$(AR) rc $@ $(_builddir)IshikoTypes_RGBAColor.o $(_builddir)IshikoTypes_Uint128.o $(_builddir)IshikoTypes_URL.o
 	$(RANLIB) $@
 
-$(_builddir)IshikoTypes_Color.o: ../../src/Color.cpp
-	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_BOOST_ROOT)/include -I../../include/Ishiko/Types -std=c++11 ../../src/Color.cpp
+$(_builddir)IshikoTypes_RGBAColor.o: ../../src/RGBAColor.cpp
+	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_BOOST_ROOT)/include -I../../include/Ishiko/Types -std=c++11 ../../src/RGBAColor.cpp
 
 $(_builddir)IshikoTypes_Uint128.o: ../../src/Uint128.cpp
 	$(CXX) -c -o $@ $(CPPFLAGS) $(CXXFLAGS) -MD -MP -fPIC -DPIC -pthread -I$(ISHIKO_CPP_BOOST_ROOT)/include -I../../include/Ishiko/Types -std=c++11 ../../src/Uint128.cpp

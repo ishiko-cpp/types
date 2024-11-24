@@ -17,10 +17,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\ColorTests.hpp">
+    <ClInclude Include="..\..\src\Point2DTests.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\Point2DTests.hpp">
+    <ClInclude Include="..\..\src\RGBAColorTests.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\Uint128Tests.hpp">
@@ -34,10 +34,10 @@
     <ClCompile Include="..\..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\ColorTests.cpp">
+    <ClCompile Include="..\..\src\Point2DTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\Point2DTests.cpp">
+    <ClCompile Include="..\..\src\RGBAColorTests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\Uint128Tests.cpp">
