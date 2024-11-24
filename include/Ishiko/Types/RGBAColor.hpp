@@ -1,8 +1,8 @@
 // SPDX-FileCopyrightText: 2005-2024 Xavier Leclercq
 // SPDX-License-Identifier: BSL-1.0
 
-#ifndef GUARD_ISHIKO_CPP_TYPES_COLOR_HPP
-#define GUARD_ISHIKO_CPP_TYPES_COLOR_HPP
+#ifndef GUARD_ISHIKO_CPP_TYPES_RGBACOLOR_HPP
+#define GUARD_ISHIKO_CPP_TYPES_RGBACOLOR_HPP
 
 #include "ColorName.hpp"
 
