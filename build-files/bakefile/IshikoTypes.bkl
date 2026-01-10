@@ -34,17 +34,14 @@ library IshikoTypes : Boost
     headers
     {
         ../../include/Ishiko/Types.hpp
-        ../../include/Ishiko/Types/ColorName.hpp
         ../../include/Ishiko/Types/linkoptions.hpp
         ../../include/Ishiko/Types/Point2D.hpp
-        ../../include/Ishiko/Types/RGBAColor.hpp
         ../../include/Ishiko/Types/Uint128.hpp
         ../../include/Ishiko/Types/URL.hpp
     }
 
     sources
     {
-        ../../src/RGBAColor.cpp
         ../../src/Uint128.cpp
         ../../src/URL.cpp
     }

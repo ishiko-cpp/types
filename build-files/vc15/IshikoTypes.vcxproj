@@ -154,16 +154,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\RGBAColor.cpp" />
     <ClCompile Include="..\..\src\Uint128.cpp" />
     <ClCompile Include="..\..\src\URL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\Ishiko\Types.hpp" />
-    <ClInclude Include="..\..\include\Ishiko\Types\ColorName.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\linkoptions.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\Point2D.hpp" />
-    <ClInclude Include="..\..\include\Ishiko\Types\RGBAColor.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\Uint128.hpp" />
     <ClInclude Include="..\..\include\Ishiko\Types\URL.hpp" />
   </ItemGroup>
