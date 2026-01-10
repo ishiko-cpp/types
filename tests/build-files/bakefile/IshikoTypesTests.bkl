@@ -28,7 +28,6 @@ program IshikoTypesTests : IshikoTypes, IshikoTestFrameworkCore
     headers
     {
         ../../src/Point2DTests.hpp
-        ../../src/RGBAColorTests.hpp
         ../../src/Uint128Tests.hpp
         ../../src/URLTests.hpp
     }
@@ -37,7 +36,6 @@ program IshikoTypesTests : IshikoTypes, IshikoTestFrameworkCore
     {
         ../../src/main.cpp
         ../../src/Point2DTests.cpp
-        ../../src/RGBAColorTests.cpp
         ../../src/Uint128Tests.cpp
         ../../src/URLTests.cpp
     }

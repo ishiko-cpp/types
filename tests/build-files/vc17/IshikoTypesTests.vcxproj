@@ -162,13 +162,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\src\main.cpp" />
     <ClCompile Include="..\..\src\Point2DTests.cpp" />
-    <ClCompile Include="..\..\src\RGBAColorTests.cpp" />
     <ClCompile Include="..\..\src\Uint128Tests.cpp" />
     <ClCompile Include="..\..\src\URLTests.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\Point2DTests.hpp" />
-    <ClInclude Include="..\..\src\RGBAColorTests.hpp" />
     <ClInclude Include="..\..\src\Uint128Tests.hpp" />
     <ClInclude Include="..\..\src\URLTests.hpp" />
   </ItemGroup>
